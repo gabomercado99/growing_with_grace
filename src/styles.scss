@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f8f9fa;
+	color: #333;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+app-root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	line-height: 1.6;
+}
+
+/* Colors from the design palette */
+:root {
+	--primary-teal: #7dd3c0;
+	--secondary-teal: #9dd4d4;
+	--accent-orange: #f4a261;
+	--accent-red: #d62828;
+	--accent-green: #52b788;
+	--text-dark: #333333;
+	--text-light: #666666;
+	--bg-light: #f8f9fa;
+	--border-color: #e0e0e0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #7dd3c0;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #6bc0ad;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	.container {
+		padding: 0 1rem;
+	}
+}
