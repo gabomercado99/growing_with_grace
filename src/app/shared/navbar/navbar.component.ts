@@ -2,16 +2,17 @@ import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterLink, RouterLinkActive } from "@angular/router";
 import { AuthService } from "../../auth/auth.service";
+import { LogoComponent } from "../logo/logo.component";
 
 @Component({
 	selector: "app-navbar",
 	standalone: true,
-	imports: [CommonModule, RouterLink, RouterLinkActive],
+	imports: [CommonModule, RouterLink, RouterLinkActive, LogoComponent],
 	template: `
 		<nav class="navbar">
 			<div class="container">
 				<div class="navbar-brand">
-					<span class="logo">🌸</span>
+					<app-logo></app-logo>
 					<span class="brand-name">Growing With Grace</span>
 				</div>
 
